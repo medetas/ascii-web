@@ -1,0 +1,18 @@
+<h1>Editing {{.Title}}</h1>
+
+<form action="/save/{{.Title}}" method="POST">
+<div><textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
+<div><input type="submit" value="Save"></div>
+
+<p>Please select your gender:</p>
+  <input type="radio" name="font" value="standard" checked="true"> Standard<br>
+  <input type="radio" name="font" value="shadow"> Shadow<br>
+  <input type="radio" name="font" value="thinkertoy"> Thinkertoy<br>  
+</form>
+
+
+
+
+<form action="/save/{{.Title}}" method="POST">
+<div><textarea name="body" rows="20" cols="80">{{printf "%s" .Body2}}</textarea></div>
+</form> 
